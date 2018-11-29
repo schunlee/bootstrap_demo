@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <title>Title</title>
+</head>
+<body>
+<!--
+.dropdown 用来指定一个下拉菜单
+使用一个按钮或链接打开下拉菜单，需要添加.dropdown-toggle和data-toggle="dropdown"属性
+<div>元素上添加.dropdown-menu类来设置实际下拉菜单，然后在下拉菜单的选项中添加.dropdown-item
+-->
+<div class="container">
+    <div class="row">
+        <div class="dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown button</button>
+            <!--下拉菜单的定位 在元素上的.dropdown-menu后添加.dropdown-menu-right使下拉菜单右对齐-->
+            <div class="dropdown-menu dropdown-menu-right">
+                <!--.dropdown-header 用于在下拉菜单中添加标题-->
+                <div class="dropdown-header">Dropdown header 1</div>
+                <a class="dropdown-item" href="#">Link 1</a>
+                <!--.dropdown-divider 用于在下拉菜单中创建一个水平的分割线-->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <!--.active 会让下拉菜单的选项高亮显示(添加蓝色背景)
+                    .disabled 禁用下拉菜单的选项
+                -->
+                <a class="dropdown-item active" href="#">Link 3</a>
+                <a class="dropdown-item disabled" href="#">Link 4</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+<script src="lib/js/popper.min.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+</body>
+</html>

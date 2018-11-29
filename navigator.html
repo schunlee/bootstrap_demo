@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!--
+        导航栏一般放在页面的顶部
+        .navbar 创建标准的导航栏
+        .navvar-expand-xl|lg|md|sm 响应式
+        导航栏选项 .navbar-nav .nav-item .nav-link
+        =========================================
+        激活状态 .active
+        禁用状态 .disabled
+        =================
+        .fixed-top 在头部固定导航栏
+        .fixed-bottom 在底部固定导航栏
+        -->
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-bottom">
+            <ul class="navbar-nav">
+                <!--.navbar-brand高亮显示品牌-->
+                <a class="navbar-brand" href="#">Logo</a>
+                <li class="nav-item" href="#"><a class="nav-link" href="#">Link 1</a></li>
+                <li class="nav-item" href="#"><a class="nav-link active" href="#">Link 2</a></li>
+                <li class="nav-item" href="#"><a class="nav-link disabled" href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="row">
+        <!--
+        折叠导航栏
+        按钮上添加class="navbar-toggler", data-toggle="collapse",data-target="#thetarget"
+        然后在设置了class="collapse navbar-collapse"类的div上包裹导航内容(链接)
+        div元素上的id匹配按钮data-target上指定的id
+        -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapseibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapseibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <!--
+        导航栏的表单元素使用.form-inline排版输入框与按钮
+        .input-group-addon 用于在输入框前添加小标签
+        -->
+        <form class="form-inline">
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input class="form-control" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+<script src="lib/js/popper.min.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+</body>
+</html>
